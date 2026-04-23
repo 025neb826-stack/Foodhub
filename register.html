@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FoodHub - Sign Up</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #FFF5F0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* HEADER */
+    header {
+        background: #B22222;
+        color: white;
+        padding: 15px 30px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        font-weight: bold;
+        color: #FFE4E1;
+    }
+
+    /* SIGNUP BOX */
+    .signup-wrapper {
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signup-box {
+        background: #FFF0F0;
+        width: 380px;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 14px rgba(178, 34, 34, 0.3);
+    }
+
+    .signup-box h2 {
+        text-align: center;
+        color: #B22222;
+        margin-bottom: 10px;
+    }
+
+    .signup-box p {
+        text-align: center;
+        font-size: 0.9em;
+        color: #8B0000;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 0.9em;
+        color: #8B0000;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #FF7F50;
+        border-radius: 6px;
+        outline: none;
+        margin-bottom: 10px;
+    }
+
+    input:focus {
+        border-color: #DC143C;
+        box-shadow: 0 0 5px rgba(220, 20, 60, 0.3);
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        background: #FF6347;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .btn:hover {
+        background: #DC143C;
+    }
+
+    .extra {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 0.85em;
+        color: #8B0000;
+    }
+
+    .extra a {
+        color: #B22222;
+        font-weight: bold;
+    }
+
+    footer {
+        background: #8B0000;
+        color: #FFE4E1;
+        text-align: center;
+        padding: 20px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>FoodHub</h1>
+        <ul>
+             <li><a href="index.html">Home</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="signup-wrapper">
+
+    <div class="signup-box">
+
+        <h2>Create Account</h2>
+        <p>Join FoodHub and explore delicious restaurants</p>
+
+        <form>
+            <label>Username</label>
+            <input type="text" placeholder="Choose a username">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Password</label>
+            <input type="password" placeholder="Create a password">
+
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Re-enter password">
+
+            <button class="btn" type="button">Sign Up</button>
+        </form>
+
+        <div class="extra">
+            Already have an account? <a href="login.html">Login</a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 FoodHub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
